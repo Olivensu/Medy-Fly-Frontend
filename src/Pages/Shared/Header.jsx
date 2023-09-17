@@ -218,20 +218,8 @@ const Header = () => {
         <div className="mx-2 md:mx-10">
           <div className="max-w-screen-xl mx-auto flex justify-between items-center">
             <div className="flex lg:flex inline lg:hidden">
-              <ul className="menu">
-                <Link to="/shop">
-                  <li>
-                    <p>
-                      <StorefrontIcon
-                        color="black"
-                        style={{ fontSize: "1.5rem" }}
-                      ></StorefrontIcon>{" "}
-                      Shop
-                    </p>
-                  </li>
-                </Link>
-              </ul>
-              <Link to="/categories">
+              
+              <Link to="/Products">
                 <ul className="menu">
                   <li>
                     <p>
@@ -239,7 +227,7 @@ const Header = () => {
                         color="black"
                         style={{ fontSize: "1.5rem" }}
                       ></LibraryBooksIcon>{" "}
-                      Categories
+                      Products
                     </p>
                   </li>
                 </ul>
@@ -270,20 +258,8 @@ const Header = () => {
                   </li>
                 </ul>
               </Link>
-              <ul className="menu ml-3">
-                <Link to="/shop">
-                  <li>
-                    <p>
-                      <StorefrontIcon
-                        color="black"
-                        style={{ fontSize: "1.5rem" }}
-                      ></StorefrontIcon>{" "}
-                      Shop
-                    </p>
-                  </li>
-                </Link>
-              </ul>
-              <Link to="/categories">
+              
+              <Link to="/Products">
                 <ul className="menu ml-3">
                   <li>
                     <p>
@@ -291,7 +267,7 @@ const Header = () => {
                         color="black"
                         style={{ fontSize: "1.5rem" }}
                       ></LibraryBooksIcon>{" "}
-                      Categories
+                      Products
                     </p>
                   </li>
                 </ul>
@@ -429,12 +405,6 @@ const Header = () => {
                 </details>
               </li>
             </ul> */}
-
-            <Link to="/create-shop">
-              <button className="bg-black text-white py-2 px-5 hidden lg:inline">
-                Become a Seller
-              </button>
-            </Link>
           </div>
         </div>
       </div>

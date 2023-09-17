@@ -15,10 +15,10 @@ const Banner1 = () => {
   return (
     <div>
         <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-5'>
-        <div className='col-span-2'>
+        <div className='col-span-3'>
             <FancySlider></FancySlider>
         </div>
-        <div>
+        {/* <div>
             <p className='text-start text-xl my-5'>Upcoming Campaigns</p>
         <div className='grid grid-cols-2 lg:grid-cols-1 gap-10'>
             <div>
@@ -28,7 +28,7 @@ const Banner1 = () => {
                 <HappyHour></HappyHour>
             </div>
         </div>
-        </div>
+        </div> */}
     </div>
     <div className='lg:flex justify-between bg-white mt-10 py-1 pr-3'>
         <div className='flex items-center my-6 ml-5'>

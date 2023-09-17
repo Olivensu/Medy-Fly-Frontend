@@ -12,6 +12,9 @@ import Login from './Pages/Forms/Login';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect } from 'react';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import Profile from './Pages/Profile/Profile';
+import CreateProduct from './Pages/Products/CreateProduct';
 
 
 function App() {
@@ -35,7 +38,8 @@ function App() {
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/register" element={<Register></Register>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
-          
+          <Route path="/profile" element={<PrivateRoute><Profile></Profile></PrivateRoute>}></Route>
+          <Route path="/create-product" element={<CreateProduct></CreateProduct>}></Route>
         </Routes>
         <Footer></Footer>
         <ToastContainer />
