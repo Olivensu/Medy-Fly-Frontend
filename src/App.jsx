@@ -15,6 +15,11 @@ import { useEffect } from 'react';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Profile from './Pages/Profile/Profile';
 import CreateProduct from './Pages/Products/CreateProduct';
+import CreateCompany from './Pages/Company/CreateCompany';
+import Companies from './Pages/Company/Companies';
+import Categories from './Pages/Categories/Categories';
+import CreateCategories from './Pages/Categories/CreateCategories';
+import CompanyDetails from './Pages/Company/CompanyDetails';
 
 
 function App() {
@@ -39,7 +44,12 @@ function App() {
           <Route path="/register" element={<Register></Register>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/profile" element={<PrivateRoute><Profile></Profile></PrivateRoute>}></Route>
-          <Route path="/create-product" element={<CreateProduct></CreateProduct>}></Route>
+          <Route path="/create-product/:shopSlug" element={<CreateProduct></CreateProduct>}></Route>
+          <Route path="/create-company" element={<CreateCompany></CreateCompany>}></Route>
+          <Route path="/companies" element={<Companies></Companies>}></Route>
+          <Route path="/categories" element={<Categories></Categories>}></Route>
+          <Route path="/create-categories" element={<PrivateRoute><CreateCategories></CreateCategories></PrivateRoute>}></Route>
+          <Route path='/shop/:slug' element={<CompanyDetails></CompanyDetails>}></Route>
         </Routes>
         <Footer></Footer>
         <ToastContainer />

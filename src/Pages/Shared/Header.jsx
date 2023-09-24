@@ -9,6 +9,7 @@ import TextField from '@mui/material/TextField';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Autocomplete from '@mui/material/Autocomplete';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import BrandingWatermarkIcon from '@mui/icons-material/BrandingWatermark';
 // import List from '@mui/material/List';
 // import ListItem from '@mui/material/ListItem';
 // import ListItemButton from '@mui/material/ListItemButton';
@@ -258,7 +259,32 @@ const Header = () => {
                   </li>
                 </ul>
               </Link>
-              
+              <Link to="/companies">
+                <ul className="menu ml-3">
+                  <li>
+                    <p>
+                      <BrandingWatermarkIcon
+                        color="black"
+                        style={{ fontSize: "1.5rem" }}
+                      ></BrandingWatermarkIcon>{" "}
+                      Companies
+                    </p>
+                  </li>
+                </ul>
+              </Link>
+              <Link to="/categories">
+                <ul className="menu ml-3">
+                  <li>
+                    <p className=''>
+                      <LibraryBooksIcon
+                        color="black"
+                        style={{ fontSize: "1.5rem" }}
+                      ></LibraryBooksIcon>{" "}
+                      Categories
+                    </p>
+                  </li>
+                </ul>
+              </Link>
               <Link to="/Products">
                 <ul className="menu ml-3">
                   <li>

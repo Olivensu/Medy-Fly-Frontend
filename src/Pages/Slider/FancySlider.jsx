@@ -38,12 +38,12 @@ const FancySlider = () => {
         modules={[Autoplay, Pagination, Navigation,Mousewheel, Keyboard]}
         className="mySwiper w-full rounded-3xl shadow-2xl"
       >
-        <SwiperSlide><img className=' max-h-128 w-full' src={img1} alt="Slide 1" /></SwiperSlide>
-        <SwiperSlide><img  className='max-h-128 w-full' src={img2} alt="Slide 2" /></SwiperSlide>
-        <SwiperSlide><img  className='max-h-128 w-full' src={img3} alt="Slide 2" /></SwiperSlide>
-        <SwiperSlide><img  className='max-h-128 w-full' src={img4} alt="Slide 2" /></SwiperSlide>
-        <SwiperSlide><img  className='max-h-128 w-full' src={img5} alt="Slide 2" /></SwiperSlide>
-        <SwiperSlide><img  className='max-h-128 w-full' src={img6} alt="Slide 2" /></SwiperSlide>
+        <SwiperSlide><img className=' max-h-96 w-full' src={img1} alt="Slide 1" /></SwiperSlide>
+        <SwiperSlide><img  className='max-h-96 w-full' src={img2} alt="Slide 2" /></SwiperSlide>
+        <SwiperSlide><img  className='max-h-96 w-full' src={img3} alt="Slide 2" /></SwiperSlide>
+        <SwiperSlide><img  className='max-h-96 w-full' src={img4} alt="Slide 2" /></SwiperSlide>
+        <SwiperSlide><img  className='max-h-96 w-full' src={img5} alt="Slide 2" /></SwiperSlide>
+        <SwiperSlide><img  className='max-h-96 w-full' src={img6} alt="Slide 2" /></SwiperSlide>
       </Swiper>
     </div>
     );
