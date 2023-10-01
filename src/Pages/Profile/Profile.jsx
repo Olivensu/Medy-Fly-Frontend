@@ -8,6 +8,7 @@ import { useState } from "react";
 import Loading from "../Shared/Loading";
 import IconButton from '@mui/material/IconButton';
 import LogoutIcon from '@mui/icons-material/Logout';
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -43,6 +44,14 @@ const Profile = () => {
                 <Link to='/login'><p onClick={logout} className="bg-gray-light inline-block p-3 rounded-xl m-3"><IconButton color="primary" sx={{ p: "" }} aria-label="directions">
               <LogoutIcon />
             </IconButton> Log Out</p></Link>
+            <Link to='/address-book'>
+                  <p className="bg-gray-light inline-block p-3 rounded-xl m-3">
+                  <IconButton color="primary" sx={{ p: "" }} aria-label="directions"><LocalShippingIcon
+                      color="black"
+                      style={{ fontSize: "1.5rem" }}
+                    ></LocalShippingIcon></IconButton>
+                    Delivery Address
+                  </p></Link>
             </div>
             <p className="text-4xl font-bold text-orange my-5">Profile </p>
             <div className="w-96 p-2 rounded-2xl border-x-red border-y-orange m-auto border-2 shadow-lg shadow-blue my-10">

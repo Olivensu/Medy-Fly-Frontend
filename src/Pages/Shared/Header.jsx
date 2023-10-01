@@ -167,6 +167,15 @@ const Header = () => {
                       <li className="mt-2">
                         <Link to="/profile">Profile</Link>
                       </li>
+                      <Link to='/orders'><li>
+                  <p>
+                    {/* <ShoppingCartIcon
+                      color="black"
+                      style={{ fontSize: "1.5rem" }}
+                    ></ShoppingCartIcon>{" "} */}
+                    Orders
+                  </p>
+                </li></Link>
                       <li>
                         <Link to='/cart'>
                           <div className="">
@@ -220,6 +229,19 @@ const Header = () => {
           <div className="max-w-screen-xl mx-auto flex justify-between items-center">
             <div className="flex lg:flex inline lg:hidden">
               
+            <Link to="/companies">
+                <ul className="menu ml-3">
+                  <li>
+                    <p>
+                      <BrandingWatermarkIcon
+                        color="black"
+                        style={{ fontSize: "1.5rem" }}
+                      ></BrandingWatermarkIcon>{" "}
+                      Companies
+                    </p>
+                  </li>
+                </ul>
+              </Link>
               <Link to="/Products">
                 <ul className="menu">
                   <li>
@@ -233,14 +255,14 @@ const Header = () => {
                   </li>
                 </ul>
               </Link>
-              <ul className="menu">
-                <Link to='/orders'><li>
+              <ul className="menu ml-3">
+                <Link to='/address-book'><li>
                   <p>
-                    <ShoppingCartIcon
+                    <LocalShippingIcon
                       color="black"
                       style={{ fontSize: "1.5rem" }}
-                    ></ShoppingCartIcon>{" "}
-                    Orders
+                    ></LocalShippingIcon>{" "}
+                    Delivery Address
                   </p>
                 </li></Link>
               </ul>
