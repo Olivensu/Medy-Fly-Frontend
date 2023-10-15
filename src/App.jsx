@@ -25,6 +25,9 @@ import Companies from './Pages/Company/Companies';
 import Categories from './Pages/Categories/Categories';
 import CreateCategories from './Pages/Categories/CreateCategories';
 import CompanyDetails from './Pages/Company/CompanyDetails';
+import AddressBook from './Pages/Profile/AddressBook';
+import CreateAddress from './Pages/Profile/CreateAddress';
+import CategoriesProduct from './Pages/Categories/CategoriesProduct';
 
 
 function App() {
@@ -60,6 +63,9 @@ function App() {
           <Route path="/categories" element={<Categories></Categories>}></Route>
           <Route path="/create-categories" element={<PrivateRoute><CreateCategories></CreateCategories></PrivateRoute>}></Route>
           <Route path='/shop/:slug' element={<CompanyDetails></CompanyDetails>}></Route>
+          <Route path='/address-book' element={<><PrivateRoute><AddressBook></AddressBook></PrivateRoute></>}></Route>
+          <Route path='/create-address' element={<><PrivateRoute><CreateAddress></CreateAddress></PrivateRoute></>}></Route>
+          <Route path='/categories/:category' element={<><CategoriesProduct></CategoriesProduct></>}></Route>
         </Routes>
         <Footer></Footer>
         <ToastContainer />

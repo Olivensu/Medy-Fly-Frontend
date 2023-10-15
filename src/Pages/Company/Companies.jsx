@@ -20,7 +20,7 @@ const Companies = () => {
         }
     return (
         <div>
-            <p className="mt-5 text-2xl text-start m-auto w-11/12">Shops</p>
+            <p className="mt-5 text-2xl text-start m-auto w-11/12">Companies</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 my-10">
             {
                     userShop.map(data=> <div  key={data._id}><div className="h-52 bg-white justify-start items-center w-48 p-2 rounded-2xl border-x-red border-y-orange m-auto border-2 my-2">

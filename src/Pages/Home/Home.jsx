@@ -1,7 +1,7 @@
 // import React from 'react'
 import Banner1 from './Banner1'
 // import Brand from './Brand'
-// import FlashSale from '../CountDown/FlashSale'
+import FlashSale from '../CountDown/FlashSale'
 // import DealDay from '../Products/DealDay'
 // import Trending from './Trainding'
 // import Popular from './Popular'
@@ -25,8 +25,9 @@ const Home = () => {
     <div className=' mx-auto bg-[#F8F8F8]'>
         <div className='max-w-screen-xl mx-auto p-3'>
         <Banner1></Banner1>
-        {/* <DealDay></DealDay>
         <FlashSale></FlashSale>
+        {/* <DealDay></DealDay>
+        // 
         <Trending></Trending>
         <Popular></Popular>
         <Brand></Brand> */}
