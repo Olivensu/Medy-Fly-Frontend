@@ -28,6 +28,8 @@ import CompanyDetails from './Pages/Company/CompanyDetails';
 import AddressBook from './Pages/Profile/AddressBook';
 import CreateAddress from './Pages/Profile/CreateAddress';
 import CategoriesProduct from './Pages/Categories/CategoriesProduct';
+import AllOrder from './Pages/Dashboard/AllOrder';
+import AdminRoute from './Pages/PrivateRoute/AdminRoute';
 
 
 function App() {
@@ -66,6 +68,7 @@ function App() {
           <Route path='/address-book' element={<><PrivateRoute><AddressBook></AddressBook></PrivateRoute></>}></Route>
           <Route path='/create-address' element={<><PrivateRoute><CreateAddress></CreateAddress></PrivateRoute></>}></Route>
           <Route path='/categories/:category' element={<><CategoriesProduct></CategoriesProduct></>}></Route>
+          <Route path='/all-order' element={<AdminRoute><AllOrder></AllOrder></AdminRoute>}></Route>
         </Routes>
         <Footer></Footer>
         <ToastContainer />
